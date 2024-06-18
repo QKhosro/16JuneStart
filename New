@@ -18,13 +18,13 @@ def index():
 
         State = request.form["State"]
 
-        weather_data = get_weather_data(city)
+        weather_data = get_weather_data(State)
 
         return render_template("index.html", weather_data=weather_data)
 
     return render_template("index.html")
 
-def get_weather_data(city):
+def get_weather_data(State):
 
     url = f"http://api./data/2.5/forecast"
 
