@@ -16,7 +16,7 @@ def index():
 
     if request.method == "POST":
 
-        city = request.form["city"]
+        State = request.form["State"]
 
         weather_data = get_weather_data(city)
 
