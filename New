@@ -16,15 +16,15 @@ def index():
 
     if request.method == "POST":
 
-        State = request.form["State"]
+        State = request.form["city"]
 
-        weather_data = get_weather_data(State)
+        weather_data = get_weather_data(city)
 
         return render_template("index.html", weather_data=weather_data)
 
     return render_template("index.html")
 
-def get_weather_data(State):
+def get_weather_data(city):
 
     url = f"http://api./data/2.5/forecast"
 
