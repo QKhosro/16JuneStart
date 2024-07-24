@@ -11,13 +11,13 @@
 
 #The codes of this project are as follows:
 
-import pygame
-import random
+  import pygame
+  import random
 
-pygame.init()
+  pygame.init()
 
-# Screen settings
-screen_width, screen_height = 640, 480
-screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption("Snake Game")
+  # Screen settings
+  screen_width, screen_height = 640, 480
+  screen = pygame.display.set_mode((screen_width, screen_height))
+  pygame.display.set_caption("Snake Game")
 
