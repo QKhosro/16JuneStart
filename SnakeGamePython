@@ -3,3 +3,8 @@
 The following simple Python project is to create a basic Snake game using Python and the Pygame library.
 The player controls a snake on the screen and the goal is to eat food (represented by a dot) to make it longer.
 If the snake hits the border of the screen or itself, the game ends.
+
+#Project requirements:
+
+*Install Python
+*Pygame library
