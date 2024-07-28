@@ -42,3 +42,12 @@ def game_loop():
 
     snake_list = []
     snake_length = 1
+
+    snake_x, snake_y = screen_width // 2, screen_height // 2
+    snake_x_change, snake_y_change = 0, 0
+
+    food_x, food_y = round(random.randrange(0, screen_width - snake_block) / 10.0) * 10.0, round(random.randrange(0, screen_height - snake_block) / 10.0) * 10.0
+
+    clock = pygame.time.Clock()
+
+    while not game_over:
