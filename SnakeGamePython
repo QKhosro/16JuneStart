@@ -67,3 +67,20 @@ def game_loop():
                         game_close = False
                     if event.key == pygame.K_c:
                         game_loop()
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                game_over = True
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_LEFT:
+                    snake_x_change = -snake_block
+                    snake_y_change = 0
+                elif event.key == pygame.K_RIGHT:
+                    snake_x_change = snake_block
+                    snake_y_change = 0
+                elif event.key == pygame.K_UP:
+                    snake_y_change = -snake_block
+                    snake_x_change = 0
+                elif event.key == pygame.K_DOWN:
+                    snake_y_change = snake_block
+                    snake_x_change = 0
