@@ -51,3 +51,11 @@ def game_loop():
     clock = pygame.time.Clock()
 
     while not game_over:
+
+        while game_close:
+            screen.fill(white)
+            font_style = pygame.font.SysFont(None, 50)
+            message = font_style.render("You Lost! Press Q-Quit or C-Play Again", True, red)
+            screen.blit(message, (screen_width // 6, screen_height // 3))
+
+            pygame.display.update()
