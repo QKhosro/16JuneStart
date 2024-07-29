@@ -59,3 +59,11 @@ def game_loop():
             screen.blit(message, (screen_width // 6, screen_height // 3))
 
             pygame.display.update()
+
+            for event in pygame.event.get():
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_q:
+                        game_over = True
+                        game_close = False
+                    if event.key == pygame.K_c:
+                        game_loop()
