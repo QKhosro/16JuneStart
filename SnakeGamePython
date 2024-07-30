@@ -84,3 +84,25 @@ def game_loop():
                 elif event.key == pygame.K_DOWN:
                     snake_y_change = snake_block
                     snake_x_change = 0
+
+        if snake_x &gt;= screen_width or snake_x = screen_height or snake_y  snake_length:
+            del snake_list[0]
+
+        for x in snake_list[:-1]:
+            if x == snake_head:
+                game_close = True
+
+        snake(snake_block, snake_list)
+
+        pygame.display.update()
+
+        if snake_x == food_x and snake_y == food_y:
+            food_x, food_y = round(random.randrange(0, screen_width - snake_block) / 10.0) * 10.0, round(random.randrange(0, screen_height - snake_block) / 10.0) * 10.0
+            snake_length += 1
+
+        clock.tick(snake_speed)
+
+    pygame.quit()
+    quit()
+
+game_loop()
