@@ -1,4 +1,4 @@
-                                                 *** This is a simple game project with Python ***
+                           *** This is a simple game project with Python ***
 
 #The following simple Python project is to create a basic Snake game using Python and the Pygame library.
  The player controls a snake on the screen and the goal is to eat food (represented by a dot) to make it longer.
