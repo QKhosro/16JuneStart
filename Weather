@@ -18,7 +18,7 @@ def index():
 
         State = request.form["city"]
 
-        weather_data = get_weather_data(city)
+        weather_data = get_weather_data(state)
 
         return render_template("index.html", weather_data=weather_data)
 
